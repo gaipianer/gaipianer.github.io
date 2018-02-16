@@ -14,10 +14,23 @@
 </head>
 <body>
 	<div class="container">
-		<h1>Fly Sister</h1>	
+		<div class="jumbotron">
+		  <h1>献给我最爱的飞姐!</h1>
+		  <p>感谢你一直陪在我身边，其实有很多话想对你说...</p>
+		  <p>
+		  	<!-- <a class="btn btn-primary btn-lg" href="#" role="button">关于更多</a> -->
+		  	<a href="#" id="example" class="btn btn-success btn-lg" rel="popover" data-content="你是真虎" data-original-title="哈哈哈">关于更多</a>
+		  </p>
+		</div>
 	</div>
 	
 </body>
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+$(function (){
+	$("#example").popover({trigger: 'focus'});
+});
+</script>
 </html>
