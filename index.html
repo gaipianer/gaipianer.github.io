@@ -1,36 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-	<title></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  <title>ngAlain</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Apple Touch Icon -->
+  <!-- <link rel="apple-touch-icon" href="custom-icon.png"> -->
+  <style type="text/css">
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #49a9ee;
+      z-index: 9999;
+      transition: opacity .65s
+    }
 
+    .preloader-hidden-add {
+      opacity: 1;
+      display: block
+    }
 
-	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    .preloader-hidden-add-active {
+      opacity: 0
+    }
 
+    .preloader-hidden {
+      display: none
+    }
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    .cs-loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%
+    }
 
-</head>
+    .cs-loader-inner {
+      transform: translateY(-50%);
+      top: 50%;
+      position: absolute;
+      width: 100%;
+      color: #fff;
+      text-align: center
+    }
+
+    .cs-loader-inner label {
+      font-size: 20px;
+      opacity: 0;
+      display: inline-block
+    }
+
+    @keyframes lol {
+      0% {
+        opacity: 0;
+        transform: translateX(-300px)
+      }
+      33% {
+        opacity: 1;
+        transform: translateX(0)
+      }
+      66% {
+        opacity: 1;
+        transform: translateX(0)
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(300px)
+      }
+    }
+
+    .cs-loader-inner label:nth-child(6) {
+      animation: lol 3s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(5) {
+      animation: lol 3s .1s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(4) {
+      animation: lol 3s .2s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(3) {
+      animation: lol 3s .3s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(2) {
+      animation: lol 3s .4s infinite ease-in-out
+    }
+
+    .cs-loader-inner label:nth-child(1) {
+      animation: lol 3s .5s infinite ease-in-out
+    }
+  </style>
+<link rel="stylesheet" href="styles.1ee7998cdb08035936a1.css"></head>
+
 <body>
-	<div class="container">
-		<div class="jumbotron">
-		  <h1>献给我最爱的飞姐!</h1>
-		  <p>感谢你一直陪在我身边，其实有很多话想对你说...</p>
-		  <p>
-		  	<!-- <a class="btn btn-primary btn-lg" href="#" role="button">关于更多</a> -->
-		  	<a href="#" id="example" class="btn btn-success btn-lg" rel="popover" data-content="你是真虎" data-original-title="哈哈哈">关于更多</a>
-		  </p>
-		</div>
-	</div>
-	
-</body>
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <app-root></app-root>
+  <div class="preloader">
+    <div class="cs-loader">
+      <div class="cs-loader-inner">
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+        <label> ●</label>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="runtime.4cb14315a6f9ad52a401.js"></script><script type="text/javascript" src="polyfills.fc51f227df1b045c6620.js"></script><script type="text/javascript" src="scripts.81ee73842051b839bd60.js"></script><script type="text/javascript" src="main.2abfb649384068747755.js"></script></body>
 
-<script>
-$(function (){
-	$("#example").popover({trigger: 'focus'});
-});
-</script>
 </html>
